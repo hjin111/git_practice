@@ -29,4 +29,25 @@ git remote set-url origin 레포주소
 # git 설정정보 조회
 git config --list
 
-# 
+# 타인레포 clone 방법 2가지
+# 1) 커밋 이력 그대로 가져오기
+git clone 타인레포주소
+# 해당폴더로 이동 후 git 명령어 쓰기
+git remote set-url origin 내레포주소
+# 별도의 add, commit 필요 없고 바로 push 가능
+git push origin master(또는 main)
+# 2) 커밋 이력 없이 가져오기
+git clone 타인레포주소
+# 해당 폴더로 이동 후에 .git폴더 삭제
+git init
+git remote add origin 내레포주소
+git add .
+git commit -m "first project"
+git push origin master
+
+# 사용자 지정 방법
+# 전역젹 사용자(이름, email) 지정
+git config --global user.name "hjin125"
+git config --global user.email "이메일"
+
+# 지역적 사용자(이름, email)지정
