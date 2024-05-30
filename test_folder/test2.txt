@@ -2,13 +2,4 @@ hello world1
 hello world2
 hello world3
 hello world4
-hello world
-hello world
-<<<<<<< HEAD
-hello world6
-=======
-hello world
-hello world
-hello world
-hello world7
->>>>>>> 71d0b1742ebf46fac969e602f0963cfaee31a4e2
+
